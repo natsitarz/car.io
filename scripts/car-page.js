@@ -44,7 +44,7 @@ function saveDesc() {
         saveDescButton.style.display = "none";
         changeDescButton.style.display = "inline";
         localStorage.setItem("carDescription", carDesc.innerHTML);
-        console.log(localStorage.getItem("carDescription"));
+        
         carDesc.contentEditable = "false";
         carDesc.style.border = "none";
     }

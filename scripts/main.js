@@ -51,7 +51,7 @@ function editCar() {
     if ([carManu, carModel, carYear, carEngine, carFuel, carTransmission, carOwner].every(field => field !== "")) {
         let firstCar = new Car({ manufacturer: carManu, model: carModel, year: carYear, engine: carEngine, fuel: carFuel, transmission: carTransmission, owner: carOwner });
         localStorage.setItem("firstCar", JSON.stringify(firstCar));
-        console.log(localStorage.getItem("firstCar"));
+        
         window.location.href = "./sites/car.html";
     } else {
         let error = document.getElementById("warning");
@@ -61,5 +61,5 @@ function editCar() {
 
 function debugReset() {
     localStorage.clear();
-    console.log("Local storage cleared");
+    
 }
