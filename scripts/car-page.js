@@ -37,7 +37,7 @@ function saveDesc() {
     let changeDescButton = document.getElementById("change-desc");
     let saveDescButton = document.getElementById("save-desc");
     let carDesc = document.getElementById("car-desc");
-    if (carDesc.innerHTML == "" || (carDesc.innerHTML.length) < 6) {
+    if (carDesc.innerHTML === "" || (carDesc.innerHTML.length) < 6) {
         carDesc.innerHTML = "Description can't be empty and it must be at least 6 characters long!";
         return error;
     } else {
