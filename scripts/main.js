@@ -54,12 +54,12 @@ function editCar() {
     } else {
         let firstCar = new Car(carManu, carModel, carYear, carEngine, carFuel, carTransmission, carOwner);
         localStorage.setItem("firstCar", JSON.stringify(firstCar));
-        console.log(localStorage.getItem("firstCar"));
+        
         window.location.href = "./sites/car.html";
     }
 }
 
 function debugReset() {
     localStorage.clear();
-    console.log("Local storage cleared");
+    
 }
