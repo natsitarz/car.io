@@ -51,7 +51,6 @@ function editCar() {
     if (carManu === "" || carModel === "" || carYear === "" || carEngine === "" || carFuel === "" || carTransmission === "" || carOwner === "") {
         let error = document.getElementById("warning");
         error.style.opacity = "100%";
-        return;
     } else {
         let firstCar = new Car(carManu, carModel, carYear, carEngine, carFuel, carTransmission, carOwner);
         localStorage.setItem("firstCar", JSON.stringify(firstCar));
