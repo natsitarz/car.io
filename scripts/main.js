@@ -48,7 +48,7 @@ function editCar() {
     let carFuel = document.getElementById("car-fuel").value;
     let carTransmission = document.getElementById("car-transm").value;
     let carOwner = document.getElementById("car-owner").value;
-    if (carManu == "" || carModel == "" || carYear == "" || carEngine == "" || carFuel == "" || carTransmission == "" || carOwner == "") {
+    if (carManu === "" || carModel === "" || carYear === "" || carEngine === "" || carFuel === "" || carTransmission === "" || carOwner === "") {
         let error = document.getElementById("warning");
         error.style.opacity = "100%";
         return;
