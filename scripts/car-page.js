@@ -1,24 +1,34 @@
 ///////////////////////////////////////////////////////////////////////////
 window.onload = function() {
-    let carManuModelText = document.getElementById("car-manumodel");
-    let carYearText = document.getElementById("car-year");
-    let carEngineText = document.getElementById("car-engine");
-    let carFuelText = document.getElementById("car-fuel");
-    let carTransmissionText = document.getElementById("car-transm");
-    let carDescText = document.getElementById("car-desc");
-    let carOwner = document.getElementById("car-owner");
-    carManuModelText.innerHTML = `${JSON.parse(localStorage.getItem("firstCar")).manufacturer} ${JSON.parse(localStorage.getItem("firstCar")).model}`;
-    carYearText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).year;
-    carEngineText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).engine;
-    carFuelText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).fuel;
-    carTransmissionText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).transmission;
-    carOwner.innerHTML = `Owner: ${JSON.parse(localStorage.getItem("firstCar")).owner}`;
-    if (localStorage.getItem("carDescription") == null) {
-        localStorage.setItem("carDescription", "No description yet");
+    if (localStorage.getItem("firstCar") === null) {
+        document.getElementById("other-info").style.display = "none";
+        document.getElementById("scroll-info").style.display = "none";
+        document.getElementById("info").style.display = "none";
+        let carManuModelText = document.getElementById("car-manumodel");
+        carManuModelText.innerHTML = "No car added yet. Return to the home page.";
     } else {
-        carDescText.innerHTML = localStorage.getItem("carDescription");
+        document.getElementById("other-info").style.display = "block";
+        document.getElementById("scroll-info").style.display = "flex";
+        document.getElementById("info").style.display = "block";
+        let carManuModelText = document.getElementById("car-manumodel");
+        let carYearText = document.getElementById("car-year");
+        let carEngineText = document.getElementById("car-engine");
+        let carFuelText = document.getElementById("car-fuel");
+        let carTransmissionText = document.getElementById("car-transm");
+        let carDescText = document.getElementById("car-desc");
+        let carOwner = document.getElementById("car-owner");
+        carManuModelText.innerHTML = `${JSON.parse(localStorage.getItem("firstCar")).manufacturer} ${JSON.parse(localStorage.getItem("firstCar")).model}`;
+        carYearText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).year;
+        carEngineText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).engine;
+        carFuelText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).fuel;
+        carTransmissionText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).transmission;
+        carOwner.innerHTML = `Owner: ${JSON.parse(localStorage.getItem("firstCar")).owner}`;
+        if (localStorage.getItem("carDescription") == null) {
+            localStorage.setItem("carDescription", "No description yet");
+        } else {
+            carDescText.innerHTML = localStorage.getItem("carDescription");
+        }
     }
-
 }
 
 ////////////////////////////////////////////////////
