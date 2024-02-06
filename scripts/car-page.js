@@ -39,13 +39,11 @@ function saveDesc() {
     let carDesc = document.getElementById("car-desc");
     if (carDesc.innerHTML === "" || (carDesc.innerHTML.length) < 6) {
         carDesc.innerHTML = "Description can't be empty and it must be at least 6 characters long!";
-        return error;
     } else {
         saveDescButton.style.display = "none";
         changeDescButton.style.display = "inline";
-        localStorage.setItem("carDescription", carDesc.innerHTML);
-        
         carDesc.contentEditable = "false";
         carDesc.style.border = "none";
     }
+    localStorage.setItem("carDescription", carDesc.innerHTML);
 }
