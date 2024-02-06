@@ -124,6 +124,10 @@ a>.cariologo {
     margin-bottom: 1rem;
 }
 
+.banner>.links {
+    font-weight: lighter;
+}
+
 a:hover,
 a:visited,
 a:link,
