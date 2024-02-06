@@ -11,6 +11,18 @@ After creating your car's profile you can: add photos to gallery, write your car
 
 Feel free to contribute to this project!
 
+## TO-DO
+- Maintenance log
+- Adding more than one car
+- Daily log
+- Refueling log with avg. fuel consumption
+- Gallery
+
+## DONE
+- Adding first car
+- Editing first car
+- Custom description [Need more work]
+
 ## Authors
 
 - [@natsitarz](https://github.com/natsitarz/)
