@@ -4,12 +4,15 @@ window.onload = function() {
         document.getElementById("other-info").style.display = "none";
         document.getElementById("scroll-info").style.display = "none";
         document.getElementById("info").style.display = "none";
+        document.getElementById("panel").style.height = "0";
         let carManuModelText = document.getElementById("car-manumodel");
         carManuModelText.innerHTML = "No car added yet. Return to the home page.";
     } else {
         document.getElementById("other-info").style.display = "block";
         document.getElementById("scroll-info").style.display = "flex";
         document.getElementById("info").style.display = "block";
+        document.getElementById("panel").display = "flex";
+        document.getElementById("panel").style.height = "80%";
         let carManuModelText = document.getElementById("car-manumodel");
         let carYearText = document.getElementById("car-year");
         let carEngineText = document.getElementById("car-engine");
