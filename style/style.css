@@ -17,6 +17,14 @@ body {
     margin: 0;
 }
 
+.cariologo {
+    width: 250px;
+}
+
+a>.cariologo {
+    width: 80px;
+}
+
 .banner {
     display: flex;
     flex-direction: row;
