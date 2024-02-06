@@ -1,0 +1,279 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    max-width: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5%;
+}
+
+.brand-name {
+    font-weight: bolder;
+}
+
+.banner>* {
+    padding-left: 1.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+.main-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+.create-new {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.contact-card {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-new>button {
+    margin-top: 1rem;
+}
+
+.create-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 0.2rem;
+}
+
+.create-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 0.2rem;
+}
+
+.card {
+    border: #BEADFA 1px solid;
+    border-radius: 15px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#warning {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.important-text {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input {
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.226);
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-weight: bolder;
+}
+
+button {
+    background-color: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+.footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    background: rgb(0, 0, 0);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.356) 1px, transparent 0);
+    background-size: 14px 14px;
+    background-position: -19px -19px;
+}
+
+.footer>* {
+    padding-right: 0.8rem;
+}
+
+.author {
+    background-color: black;
+    font-weight: bolder;
+}
+
+.car-page {
+    width: 100%;
+    height: 50%;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.create-left>input {
+    text-align: center;
+}
+
+.create-right>input {
+    text-align: center;
+}
+
+.create-new>input {
+    text-align: center;
+}
+
+@keyframes mv {
+    100% {
+        background-position: 22px 22px;
+    }
+    50% {
+        background-position: -22px -22px;
+    }
+    0% {
+        background-position: 22px 22px;
+    }
+}
+
+#save-desc {
+    display: none;
+}
+
+#car-manumodel {
+    font-size: 8rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.other-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+#blob {
+    height: auto;
+    max-width: 100%;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.info {
+    width: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #2b2336;
+}
+
+#scroll-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#car-desc {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.other-info>#car-owner {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

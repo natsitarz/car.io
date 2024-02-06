@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR.io</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <p class="brand-name"><a href="./index.html">CAR.IO</a></p>
+        <a class="links" href="./sites/car.html">your car profile</a>
+        <a class="links" href="./sites/about.html">about</a>
+    </div>
+    <div class="main-create">
+        <div id="first-create" class="create-new card">
+            <p class="important-text">Hi!</p>
+            <p id="title" class="text">Let's create your first car profile</p>
+            <div class="form">
+                <div class="create-left">
+                    <label for="car-manufacturer">Car manufacturer:</label>
+                    <input type="text" name="car-manufacturer" id="car-manufacturer" required>
+                    <label for="car-model">Model:</label>
+                    <input type="text" name="car-model" id="car-model" required>
+                    <label for="car-year">Year:</label>
+                    <input type="number" name="year" id="car-year" required>
+                </div>
+                <div class="create-right">
+                    <label for="car-engine">Engine capacity:</label>
+                    <input type="text" name="car-engine" id="car-engine" required>
+                    <label for="car-fuel">Fuel type:</label>
+                    <input type="text" name="car-fuel" id="car-fuel" required>
+                    <label for="car-transm">Transmission:</label>
+                    <input type="text" name="car-transm" id="car-transm" required>
+                </div>
+            </div>
+            <label for="car-owner">Your username:</label>
+            <input type="text" name="car-owner" id="car-owner" required>
+            <button onclick="editCar()" id="AddEdit">Add car</button>
+            <button onclick="debugReset()">Debug reset</button>
+            <p id="warning">Please complete all input fields to continue!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="author">ns</p>
+    </div>
+</body>
+
+</html>
