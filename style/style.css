@@ -244,6 +244,11 @@ button {
     gap: 1rem;
 }
 
+#title-sub-text {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
 #blob {
     height: auto;
     max-width: 100%;
