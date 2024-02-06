@@ -29,7 +29,7 @@ window.onload = function() {
 }
 
 class Car {
-    constructor(manufacturer, model, year, engine, fuel, transmission, owner) {
+    constructor({ manufacturer, model, year, engine, fuel, transmission, owner }) {
         this.manufacturer = manufacturer;
         this.model = model;
         this.year = year;
@@ -48,14 +48,14 @@ function editCar() {
     let carFuel = document.getElementById("car-fuel").value;
     let carTransmission = document.getElementById("car-transm").value;
     let carOwner = document.getElementById("car-owner").value;
-    if (carManu === "" || carModel === "" || carYear === "" || carEngine === "" || carFuel === "" || carTransmission === "" || carOwner === "") {
-        let error = document.getElementById("warning");
-        error.style.opacity = "100%";
-    } else {
-        let firstCar = new Car(carManu, carModel, carYear, carEngine, carFuel, carTransmission, carOwner);
+    if ([carManu, carModel, carYear, carEngine, carFuel, carTransmission, carOwner].every(field => field !== "")) {
+        let firstCar = new Car({ manufacturer: carManu, model: carModel, year: carYear, engine: carEngine, fuel: carFuel, transmission: carTransmission, owner: carOwner });
         localStorage.setItem("firstCar", JSON.stringify(firstCar));
         console.log(localStorage.getItem("firstCar"));
         window.location.href = "./sites/car.html";
+    } else {
+        let error = document.getElementById("warning");
+        error.style.opacity = "100%";
     }
 }
 
