@@ -6,7 +6,7 @@ window.onload = function() {
         document.getElementById("info").style.display = "none";
         document.getElementById("panel").style.height = "0";
         let carManuModelText = document.getElementById("car-manumodel");
-        carManuModelText.innerHTML = "No car added yet. Return to the home page.";
+        carManuModelText.innerHTML = "No car added yet. <p style='font-size: 1.5rem; font-weight: lighter;'>Return to the home page and add new car.</p>";
     } else {
         document.getElementById("other-info").style.display = "block";
         document.getElementById("scroll-info").style.display = "flex";
