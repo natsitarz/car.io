@@ -8,7 +8,7 @@ window.onload = function() {
         let carManuModelText = document.getElementById("car-manumodel");
         carManuModelText.innerHTML = "No car added yet. <p style='font-size: 1.5rem; font-weight: lighter;'>Return to the home page and add new car.</p>";
     } else {
-        document.getElementById("other-info").style.display = "block";
+        document.getElementById("other-info").style.display = "flex";
         document.getElementById("scroll-info").style.display = "flex";
         document.getElementById("info").style.display = "block";
         document.getElementById("panel").display = "flex";
