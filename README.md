@@ -7,7 +7,7 @@ Your personal car's journal!
 
 Ever dreamed about journal for your car? __CAR.io is just for you!__ 
 
-After creating your car's profile you can: add photos to gallery, write your car maintenance log, save notes about your refueling and avg. fuel consumption, make a log with daily unexpected situations and more!  
+After creating your car's profile you can: add photos to gallery and share them, write your car maintenance log, save notes about your refueling and avg. fuel consumption, make a log with daily unexpected situations and more!  
 
 Feel free to contribute to this project!
 
@@ -17,6 +17,7 @@ Feel free to contribute to this project!
 - Daily log
 - Refueling log with avg. fuel consumption
 - Gallery
+- Sharing photos from gallery
 
 ## DONE
 - Adding first car
