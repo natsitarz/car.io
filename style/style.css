@@ -226,7 +226,6 @@ button {
     height: 50%;
     padding: 100px;
     box-sizing: border-box;
-    background: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
