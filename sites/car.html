@@ -17,29 +17,48 @@
         <a class="links" href="./car.html">vehicles</a>
         <a class="links" href="./about.html">about</a>
     </div>
-    <div class="car-page">
-        <p id="car-manumodel"></p>
-        <div class="other-info" id="other-info">
-            <p id="car-desc">No description yet</p>
-            <button onclick="window.onload((changeDesc()))" id="change-desc">Change description</button>
-            <button onclick="window.onload((saveDesc()))" id="save-desc">Save</button>
+    <div class="main-container">
+        <div class="car-page">
+            <p id="car-manumodel"></p>
+            <div class="other-info" id="other-info">
+                <p id="car-desc">No description yet</p>
+                <button onclick="window.onload((changeDesc()))" id="change-desc">Change description</button>
+                <button onclick="window.onload((saveDesc()))" id="save-desc">Save</button>
+            </div>
+            <div class="other-info">
+                <p id="car-year"></p>
+                <p id="car-engine"></p>
+                <p id="car-fuel"></p>
+                <p id="car-transm"></p>
+            </div>
+            <div class="other-info">
+                <p id="car-owner"></p>
+            </div>
         </div>
-        <div class="other-info">
-            <p id="car-year"></p>
-            <p id="car-engine"></p>
-            <p id="car-fuel"></p>
-            <p id="car-transm"></p>
+        <div class="banner" id="scroll-info">
+            <p>Scroll down!</p>
         </div>
-        <div class="other-info">
-            <p id="car-owner"></p>
+        <div class="panel" id="panel">
+            <div class="info-cards" id="log">
+                <h2>Log</h2>
+            </div>
+            <div class="info-cards" id="fuel-consumption">
+                <h2>Avg. fuel consumption</h2>
+            </div>
+            <div class="info-cards" id="maintenance">
+                <h2>Car maintenance</h2>
+            </div>
         </div>
-    </div>
-    <div class="banner">
-        <p id="scroll-info">Scroll down!</p>
-    </div>
-    <div class="panel" id="panel">
-        <div class="info" id="info">
-            <p>Coming soon!</p>
+        <div class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-items">
+                <button id="add-photo">
+                    <p>add new photo</p>
+                </button>
+                <img src="../img/logo.png" alt="n1">
+                <img src="" alt="n2">
+                <img src="" alt="n3">
+            </div>
         </div>
     </div>
     <div class="footer">

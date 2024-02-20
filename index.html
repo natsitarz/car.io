@@ -17,34 +17,36 @@
         <a class="links" href="./sites/car.html">vehicles</a>
         <a class="links" href="./sites/about.html">about</a>
     </div>
-    <div class="main-create">
-        <img src="./img/logo.png" alt="car.io logo" class="cariologo">
-        <p id="title-sub-text">Your personal car's journal!</p>
-        <div id="first-create" class="create-new card">
-            <p id="title" class="text">Let's create your first car profile</p>
-            <div class="form">
-                <div class="create-left">
-                    <label for="car-manufacturer">Manufacturer:</label>
-                    <input type="text" name="car-manufacturer" id="car-manufacturer" required>
-                    <label for="car-model">Model:</label>
-                    <input type="text" name="car-model" id="car-model" required>
-                    <label for="car-year">Year:</label>
-                    <input type="number" name="year" id="car-year" required>
+    <div class="main-container" id="home-page-container">
+        <div class="main-create">
+            <img src="./img/logo.png" alt="car.io logo" class="cariologo">
+            <p id="title-sub-text">Your personal car's journal!</p>
+            <div id="first-create" class="create-new card">
+                <p id="title" class="text">Let's create your first car profile</p>
+                <div class="form">
+                    <div class="create-left">
+                        <label for="car-manufacturer">Manufacturer:</label>
+                        <input type="text" name="car-manufacturer" id="car-manufacturer" required>
+                        <label for="car-model">Model:</label>
+                        <input type="text" name="car-model" id="car-model" required>
+                        <label for="car-year">Year:</label>
+                        <input type="number" name="year" id="car-year" required>
+                    </div>
+                    <div class="create-right">
+                        <label for="car-engine">Engine:</label>
+                        <input type="text" name="car-engine" id="car-engine" required>
+                        <label for="car-fuel">Fuel type:</label>
+                        <input type="text" name="car-fuel" id="car-fuel" required>
+                        <label for="car-transm">Transmission:</label>
+                        <input type="text" name="car-transm" id="car-transm" required>
+                    </div>
                 </div>
-                <div class="create-right">
-                    <label for="car-engine">Engine:</label>
-                    <input type="text" name="car-engine" id="car-engine" required>
-                    <label for="car-fuel">Fuel type:</label>
-                    <input type="text" name="car-fuel" id="car-fuel" required>
-                    <label for="car-transm">Transmission:</label>
-                    <input type="text" name="car-transm" id="car-transm" required>
-                </div>
+                <label for="car-owner">Your username:</label>
+                <input type="text" name="car-owner" id="car-owner" required>
+                <button onclick="editCar()" id="AddEdit">Add car</button>
+                <button onclick="debugReset()">Debug reset</button>
+                <p id="warning">Please complete all input fields to continue!</p>
             </div>
-            <label for="car-owner">Your username:</label>
-            <input type="text" name="car-owner" id="car-owner" required>
-            <button onclick="editCar()" id="AddEdit">Add car</button>
-            <button onclick="debugReset()">Debug reset</button>
-            <p id="warning">Please complete all input fields to continue!</p>
         </div>
     </div>
     <div class="footer">

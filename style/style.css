@@ -11,6 +11,11 @@ body {
     max-width: 100%;
 }
 
+.main-container {
+    width: 100%;
+    height: auto;
+}
+
 .title-text {
     font-size: 3rem;
     font-weight: bolder;
@@ -259,34 +264,77 @@ button {
 }
 
 .panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#home-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80%;
+    height: 90%;
 }
 
-.info {
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 80px;
+    height: 100%;
+    gap: 1rem;
+    text-align: center;
+}
+
+.gallery-items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 300px;
+}
+
+#add-photo {
+    border-radius: 15px;
+    border: 1px white solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info-cards {
+    width: 100%;
+    padding: 40px;
     box-sizing: border-box;
     height: 100%;
     background-color: #2b2336;
+    border-radius: 15px;
 }
 
 #scroll-info {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 #car-desc {
     font-size: 1.5rem;
     font-weight: lighter;
     margin: 0;
+}
+
+#scroll-info>p {
+    padding-left: 0;
 }
 
 .other-info>#car-owner {
