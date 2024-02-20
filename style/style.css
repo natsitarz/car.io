@@ -37,6 +37,23 @@ a>.cariologo {
     justify-content: flex-start;
     width: 100%;
     height: 5%;
+    background-color: black;
+    z-index: 100;
+    position: fixed;
+}
+
+.main-container {
+    padding-top: 2%;
+}
+
+.scroll-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5%;
+    background-color: black;
 }
 
 .brand-name {
@@ -168,7 +185,7 @@ label {
 }
 
 button {
-    background-color: #000000;
+    background-color: #0000006c;
     border: 1px solid rgba(255, 255, 255, 0.24);
     padding: 0.4rem;
     font-size: 1rem;
@@ -204,10 +221,24 @@ button {
 }
 
 .car-page {
+    position: relative;
     width: 100%;
     height: 50%;
     padding: 100px;
     box-sizing: border-box;
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    animation: slideInFromTop 2s ease-in-out;
+}
+
+#upload-photo-button {
+    position: absolute;
+    bottom: 6%;
+    right: 2%;
 }
 
 .create-left>input {
@@ -291,6 +322,7 @@ button {
     height: 100%;
     gap: 1rem;
     text-align: center;
+    animation: slideInFromTop 2s ease-in-out;
 }
 
 .gallery-items {
@@ -317,6 +349,24 @@ button {
     height: 100%;
     background-color: #2b2336;
     border-radius: 15px;
+    animation: slideInFromTop 2s ease-in-out;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.other-info>#car-owner {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
 }
 
 #scroll-info {
@@ -325,6 +375,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: slideInFromTop 2s ease-in-out;
 }
 
 #car-desc {
