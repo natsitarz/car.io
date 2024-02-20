@@ -6,6 +6,7 @@ window.onload = function() {
         document.getElementById("panel").style.display = "none";
         document.getElementById("gallery").style.display = "none";
         document.getElementById("panel").style.height = "0";
+        document.getElementById("upload-photo-button").style.display = "none";
         document.getElementById("car-page").style.background = "0";
         let carManuModelText = document.getElementById("car-manumodel");
         carManuModelText.innerHTML = "No car added yet. <p style='font-size: 1.5rem; font-weight: lighter;'>Return to the home page and add new car.</p>";
@@ -17,6 +18,7 @@ window.onload = function() {
         document.getElementById("panel").style.height = "80%";
         document.getElementById("gallery").style.display = "flex";
         document.getElementById("car-page").style.backgroundImage = "url('" + localStorage.getItem("carPhoto") + "')";
+        document.getElementById("upload-photo-button").style.display = "block";
         let carManuModelText = document.getElementById("car-manumodel");
         let carYearText = document.getElementById("car-year");
         let carEngineText = document.getElementById("car-engine");
