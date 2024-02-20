@@ -36,7 +36,7 @@
             </div>
 
             <input type="file" id="upload-photo" accept="image/*" style="display: none;" onchange="changeBg()">
-            <button id="upload-photo-button" onclick="document.getElementById('upload-photo').click()">Prześlij zdjęcie</button>
+            <button id="upload-photo-button" onclick="document.getElementById('upload-photo').click()">Change background</button>
             <script>
                 document.getElementById('upload-photo').addEventListener('change', function(event) {
                     var file = event.target.files[0];
@@ -52,30 +52,47 @@
             </script>
         </div>
         <div class="scroll-down" id="scroll-info">
-            <p>Scroll down!</p>
+            <p class="anim">↓ Scroll down! ↓</p>
         </div>
         <div class="panel" id="panel">
             <div class="info-cards" id="log">
                 <h2>Log</h2>
+                <p>Add new log: <input type="text" name="" id=""> <button>Add</button></p>
+                <div class="log-entry">
+                    <p><b>09-08-2023</b> - Changed oil</p>
+                    <button>remove</button>
+                </div>
             </div>
             <div class="info-cards" id="fuel-consumption">
                 <h2>Avg. fuel consumption</h2>
+                <p>Latest fuel consumption log: <input type="text" name="" id=""> <button>Add</button></p>
+                <div class="log-entry">
+                    <p><b>09-08-2023</b> - 7.5l/100km</p>
+                    <button>remove</button>
+                </div>
             </div>
             <div class="info-cards" id="maintenance">
                 <h2>Car maintenance</h2>
+                <p>Add new thing: <input type="text" name="" id=""> <button>Add</button></p>
+                <div class="log-entry">
+                    <input type="checkbox" name="" id="">
+                    <p><b>Change oil</b></p>
+                </div>
             </div>
         </div>
         <div class="gallery" id="gallery">
-            <h2>Gallery</h2>
+            <h1>Gallery</h1>
             <div class="gallery-items">
+                <img src="../img/1.jpeg" alt="n1" class="n">
+                <img src="../img/2.jpeg" alt="n2" class="n">
+                <img src="../img/3.JPG" alt="n3" class="n">
+                <img src="../img/4.jpeg" alt="n4" class="n">
                 <button id="add-photo">
-                    <p>add new photo</p>
+                    add new photo
                 </button>
-                <img src="../img/logo.png" alt="n1">
-                <img src="" alt="n2">
-                <img src="" alt="n3">
             </div>
         </div>
+        <br>
     </div>
     <div class="footer">
         <p class="author">ns</p>
