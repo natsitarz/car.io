@@ -295,7 +295,7 @@ button {
 
 .panel {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     width: 100%;
     height: 20%;
@@ -354,7 +354,7 @@ button {
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
-    height: 100%;
+    height: fit-content;
     background-color: #232d369c;
     border-radius: 15px;
     animation: slideInFromTop 2s ease-in-out;
