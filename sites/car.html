@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAR.io</title>
     <link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/car-page.js"></script>
+    <script src="../scripts/car-page.js" defer></script>
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 </head>
 
@@ -37,53 +37,28 @@
 
             <input type="file" id="upload-photo" accept="image/*" style="display: none;" onchange="changeBg()">
             <button id="upload-photo-button" onclick="document.getElementById('upload-photo').click()">Change background</button>
-            <script>
-                document.getElementById('upload-photo').addEventListener('change', function(event) {
-                    var file = event.target.files[0];
-                    var reader = new FileReader();
-
-                    reader.onload = function(e) {
-                        document.getElementById('car-page').style.backgroundImage = "url('" + e.target.result + "')";
-                        localStorage.setItem("carPhoto", e.target.result);
-                    };
-
-                    reader.readAsDataURL(file);
-                });
-            </script>
         </div>
         <div class="scroll-down" id="scroll-info">
             <p class="anim">↓ Scroll down! ↓</p>
         </div>
         <div class="panel" id="panel">
-            <div class="info-cards" id="log">
+            <div class="info-cards log" id="log">
                 <h2>Log</h2>
-                <p>Add new log: <input type="text" name="" id=""> <button>Add</button></p>
-                <div class="log-entry">
-                    <p><b>09-08-2023</b> - Changed oil</p>
-                    <button>remove</button>
-                </div>
+                <p>Add new log: <input type="text" name="" id="" placeholder="Long trip to Warsaw!"> <button onclick="infoCards('log')">Add</button></p>
             </div>
-            <div class="info-cards" id="fuel-consumption">
+            <div class="info-cards fuel-consumption" id="fuel-consumption">
                 <h2>Avg. fuel consumption</h2>
-                <p>Latest fuel consumption log: <input type="text" name="" id=""> <button>Add</button></p>
-                <div class="log-entry">
-                    <p><b>09-08-2023</b> - 7.5l/100km</p>
-                    <button>remove</button>
-                </div>
+                <p>Latest fuel consumption log: <input type="number" name="" id="" placeholder="6.4"> <button onclick="infoCards('fuel-consumption')">Add</button></p>
             </div>
-            <div class="info-cards" id="maintenance">
+            <div class="info-cards maintenance" id="maintenance">
                 <h2>Car maintenance</h2>
-                <p>Add new thing: <input type="text" name="" id=""> <button>Add</button></p>
-                <div class="log-entry">
-                    <input type="checkbox">
-                    <p><b>Change oil</b></p>
-                </div>
+                <p>Add new thing: <input type="text" name="" id="" placeholder="Change oil"> <button onclick="infoCards('maintenance')">Add</button></p>
             </div>
         </div>
         <div class="gallery" id="gallery">
             <h1>Gallery</h1>
             <div class="gallery-items">
-                <img src="../img/1.jpeg" alt="n1" class="n">
+                <img style="display: none;" src="../img/1.jpeg" alt="n1" class="n">
                 <img src="../img/2.jpeg" alt="n2" class="n">
                 <img src="../img/3.JPG" alt="n3" class="n">
                 <img src="../img/4.jpeg" alt="n4" class="n">

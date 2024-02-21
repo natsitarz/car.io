@@ -38,6 +38,51 @@ window.onload = function() {
             carDescText.innerHTML = localStorage.getItem("carDescription");
         }
     }
+    document.getElementById('upload-photo').addEventListener('change', function(event) {
+        let file = event.target.files[0];
+        let reader = new FileReader();
+
+        reader.onload = function(e) {
+            document.getElementById('car-page').style.backgroundImage = "url('" + e.target.result + "')";
+            localStorage.setItem("carPhoto", e.target.result);
+        };
+
+        reader.readAsDataURL(file);
+    });
+    let logs = JSON.parse(localStorage.getItem("logs")) || {};
+    Object.keys(logs).forEach(function(type) {
+        console.log(logs);
+        let logText = logs[`${type}`];
+        let typ = type.replace(/[0-9]/g, '');;
+        let newLogEntry = document.createElement('div');
+        newLogEntry.classList.add('log-entry');
+        let logTextElement = document.createElement('p');
+        if (typ === "log") {
+            logTextElement.innerHTML = `${logText}`;
+        } else if (typ === "fuel-consumption") {
+            logTextElement.innerHTML = `${logText}`;
+        } else {
+            let newInputCheckbox = document.createElement('input');
+            newInputCheckbox.type = "checkbox";
+            logTextElement.innerHTML = `${logText}`;
+            newLogEntry.appendChild(newInputCheckbox);
+        }
+        let removeButton = document.createElement('button');
+        removeButton.innerHTML = 'remove';
+
+        removeButton.addEventListener('click', function() {
+            newLogEntry.remove();
+            // Remove log from localStorage
+            delete logs[`${type}`];
+            console.log(`${type}`);
+            localStorage.setItem("logs", JSON.stringify(logs));
+        });
+        newLogEntry.appendChild(logTextElement);
+        newLogEntry.appendChild(removeButton);
+        console.log(`${type}`);
+        console.log(typ);
+        document.querySelector(`.info-cards#${typ}`).appendChild(newLogEntry);
+    });
 }
 
 ////////////////////////////////////////////////////
@@ -65,4 +110,50 @@ function saveDesc() {
         carDesc.style.border = "none";
     }
     localStorage.setItem("carDescription", carDesc.innerHTML);
+}
+
+function infoCards(type) {
+    let logText = document.querySelector(`.${type} input `).value;
+    if (logText === '') return;
+    else {
+        let newLogEntry = document.createElement('div');
+        newLogEntry.classList.add('log-entry');
+        let logTextElement = document.createElement('p');
+        if (type === "log") {
+            logTextElement.innerHTML = `<b> ${new Date(Date.now()).toLocaleString().split(',')[0] } </b> - ${logText}`;
+        } else if (type === "fuel-consumption") {
+            logTextElement.innerHTML = `<b>${new Date(Date.now()).toLocaleString().split(',')[0]}</b> - ${logText}l/100km`;
+        } else {
+            let newInputCheckbox = document.createElement('input');
+            newInputCheckbox.type = "checkbox";
+            logTextElement.innerHTML = `<b>${logText}</b>`;
+            newLogEntry.appendChild(newInputCheckbox);
+        }
+        let rm = 0;
+        let removeButton = document.createElement('button');
+        removeButton.innerHTML = 'remove';
+        let logs = JSON.parse(localStorage.getItem("logs")) || {};
+        for (let i = 0; i < 100; i++) {
+            if (logs[type + i] === undefined) {
+                logs[type + i] = logTextElement.innerHTML;
+                console.log(logs);
+                localStorage.setItem("logs", JSON.stringify(logs));
+                rm = i;
+                break;
+            }
+        }
+        removeButton.addEventListener('click', function() {
+            logs = JSON.parse(localStorage.getItem("logs")) || {};
+            newLogEntry.remove();
+            delete logs[`${type}${rm}`];
+            console.log([`${type}${rm}`])
+            console.log(logs);
+            localStorage.setItem("logs", JSON.stringify(logs));
+        });
+        newLogEntry.appendChild(logTextElement);
+        newLogEntry.appendChild(removeButton);
+
+        document.querySelector(`.info-cards#${type}`).appendChild(newLogEntry);
+
+    }
 }
