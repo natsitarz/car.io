@@ -155,5 +155,7 @@ function infoCards(type) {
 
         document.querySelector(`.info-cards#${type}`).appendChild(newLogEntry);
 
+        logText = document.querySelector(`.${type} input `).value = '';
+
     }
 }
