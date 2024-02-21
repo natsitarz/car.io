@@ -53,7 +53,7 @@ window.onload = function() {
     Object.keys(logs).forEach(function(type) {
         console.log(logs);
         let logText = logs[`${type}`];
-        let typ = type.replace(/[0-9]/g, '');;
+        let typ = type.replace(/[0-9]/g, '');
         let newLogEntry = document.createElement('div');
         newLogEntry.classList.add('log-entry');
         let logTextElement = document.createElement('p');
