@@ -16,6 +16,7 @@ Feel free to contribute to this project!
 - Gallery
 - Sharing photos from gallery
 - QR code stickers
+- Responsive elements for mobile and other displays
 
 ## DONE
 - Maintenance log
