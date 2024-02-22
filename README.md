@@ -12,14 +12,15 @@ After creating your car's profile you can: add photos to gallery and share them,
 Feel free to contribute to this project!
 
 ## TO-DO
-- Maintenance log
 - Adding more than one car
-- Daily log
-- Refueling log with avg. fuel consumption
 - Gallery
 - Sharing photos from gallery
+- QR code stickers
 
 ## DONE
+- Maintenance log
+- Daily log
+- Refueling log with avg. fuel consumption
 - Adding first car
 - Editing first car
 - Custom description [Need more work]
