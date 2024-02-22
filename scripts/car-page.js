@@ -8,6 +8,7 @@ window.onload = function() {
         document.getElementById("panel").style.height = "0";
         document.getElementById("upload-photo-button").style.display = "none";
         document.getElementById("car-page").style.background = "0";
+        document.title = "CAR.io";
         let carManuModelText = document.getElementById("car-manumodel");
         carManuModelText.innerHTML = "No car added yet. <p style='font-size: 1.5rem; font-weight: lighter;'>Return to the home page and add new car.</p>";
     } else {
@@ -26,6 +27,7 @@ window.onload = function() {
         let carTransmissionText = document.getElementById("car-transm");
         let carDescText = document.getElementById("car-desc");
         let carOwner = document.getElementById("car-owner");
+        document.title = `CAR.io | ${JSON.parse(localStorage.getItem("firstCar")).manufacturer} ${JSON.parse(localStorage.getItem("firstCar")).model}`;
         carManuModelText.innerHTML = `${JSON.parse(localStorage.getItem("firstCar")).manufacturer} ${JSON.parse(localStorage.getItem("firstCar")).model}`;
         carYearText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).year;
         carEngineText.innerHTML = JSON.parse(localStorage.getItem("firstCar")).engine;
