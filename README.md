@@ -1,11 +1,10 @@
-![Obszar roboczy 1](https://github.com/natsitarz/car.io/assets/78207063/aa8c6f4a-26ca-48c3-8dad-2a42223cd52a)
+![new-logo](https://github.com/natsitarz/car.io/assets/78207063/1982469e-0111-4b1d-9ae4-6a76b7edc34b)
 
-
-# CAR.io
+# IDMOTO
 
 Your personal car's profile!
 
-Ever dreamed about profile for your car? __CAR.io is just for you!__ 
+Ever dreamed about profile for your car? __IDMOTO is just for you!__ 
 
 After creating your car's profile you can: add photos to gallery and share them, write your car maintenance log, save notes about your refueling and avg. fuel consumption, make a log with daily unexpected situations and more!
 You can share your profile using generated qr codes.  
