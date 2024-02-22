@@ -274,6 +274,18 @@ button {
     margin: 0;
 }
 
+.warning {
+    font-size: 8rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.warning-desc {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
 .other-info {
     display: flex;
     flex-direction: row;
