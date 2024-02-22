@@ -3,11 +3,12 @@
 
 # CAR.io
 
-Your personal car's journal!
+Your personal car's profile!
 
-Ever dreamed about journal for your car? __CAR.io is just for you!__ 
+Ever dreamed about profile for your car? __CAR.io is just for you!__ 
 
-After creating your car's profile you can: add photos to gallery and share them, write your car maintenance log, save notes about your refueling and avg. fuel consumption, make a log with daily unexpected situations and more!  
+After creating your car's profile you can: add photos to gallery and share them, write your car maintenance log, save notes about your refueling and avg. fuel consumption, make a log with daily unexpected situations and more!
+You can share your profile using generated qr codes.  
 
 Feel free to contribute to this project!
 
