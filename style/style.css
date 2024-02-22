@@ -80,6 +80,7 @@ a>.cariologo {
     justify-content: center;
     width: 100%;
     height: 90%;
+    animation: slideInFromTop 2s ease-in-out;
 }
 
 .create-new {
@@ -90,7 +91,6 @@ a>.cariologo {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 2s ease;
 }
 
 .contact-card {
@@ -127,7 +127,8 @@ a>.cariologo {
 }
 
 .card {
-    border: #BEADFA 1px solid;
+    border: #ffffff4b 1px solid;
+    background-color: #232d3665;
     border-radius: 15px;
     padding: 1rem;
     box-sizing: border-box;
@@ -150,12 +151,16 @@ a>.cariologo {
     font-weight: lighter;
 }
 
-a:hover,
 a:visited,
 a:link,
 a:active {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .form {
@@ -169,28 +174,40 @@ a:active {
 
 input {
     height: 1.5rem;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.24);
     border-radius: 5px;
-    box-sizing: border-box;
     color: white;
-    background-color: rgba(255, 255, 255, 0.226);
-}
-
-input:focus {
+    background-color: rgba(0, 0, 0, 0.582);
     outline: none;
 }
 
+input:focus {
+    outline: 1px white solid;
+}
+
 label {
-    font-weight: bolder;
+    font-weight: lighter;
+}
+
+input,
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    outline: 1px white solid;
 }
 
 button {
-    background-color: #0000006c;
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    padding: 0.4rem;
+    background-color: #00000050;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1rem;
-    font-weight: lighter;
+    font-weight: normal;
     border-radius: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.39);
 }
 
 .footer {
@@ -446,4 +463,50 @@ input::-webkit-inner-spin-button {
     justify-content: flex-start;
     border-radius: 15px;
     gap: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    gap: 1rem;
+    border: #ffffff4b 1px solid;
+    box-sizing: border-box;
+    background-color: #232d3665;
+    border-radius: 15px;
+}
+
+.background-login {
+    border-radius: 15px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#main-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 90%;
+    animation: slideInFromTop 2s ease-in-out;
 }

@@ -5,7 +5,7 @@ window.onload = function() {
     site.style.opacity = "100%";
     let mainText = document.getElementById("title");
     if (localStorage.getItem("firstCar") != null) {
-        mainText.innerHTML = "Edit your car profile";
+        mainText.innerHTML = "<b>Edit your car profile</b>";
         let carManu = document.getElementById("car-manufacturer");
         let carModel = document.getElementById("car-model");
         let carYear = document.getElementById("car-year");
@@ -23,8 +23,10 @@ window.onload = function() {
         carFuel.value = car.fuel;
         carTransmission.value = car.transmission;
         carOwner.value = car.owner;
+        document.title = "IDMOTO | Edit car profile";
     } else {
-        mainText.innerHTML = "Let's create your first car profile";
+        mainText.innerHTML = "<b>Let's create your car profile</b>";
+        document.title = "IDMOTO | Add car profile";
     }
 }
 
