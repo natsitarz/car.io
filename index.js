@@ -9,7 +9,7 @@ import { initializeApp } from "firebase/app";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyBFeREYEgrVj2cCzj71sP8pIAN3PXL-gQ0",
-    authDomain: "natsitarz.github.io",
+    authDomain: "natsitarz.github.io/car.io/",
     projectId: "idmoto",
     storageBucket: "idmoto.appspot.com",
     messagingSenderId: "462593287282",
