@@ -1,6 +1,20 @@
 {
-  "dependencies": {
-    "firebase": "^10.6.0",
-    "firebaseui": "^6.1.0"
-  }
+    "dependencies": {
+        "firebase": "^10.6.0",
+        "firebaseui": "^6.1.0"
+    },
+    "name": "car.io",
+    "description": "![new-logo](https://github.com/natsitarz/car.io/assets/78207063/1982469e-0111-4b1d-9ae4-6a76b7edc34b)",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "natsitarz",
+    "license": "MIT"
 }
