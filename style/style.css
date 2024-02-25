@@ -465,7 +465,7 @@ input::-webkit-inner-spin-button {
     gap: 10px;
 }
 
-.login {
+#login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,4 +509,24 @@ input::-webkit-inner-spin-button {
     width: 60%;
     height: 90%;
     animation: slideInFromTop 2s ease-in-out;
+}
+
+.button-login {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+#logged {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    gap: 1rem;
+    border: #ffffff4b 1px solid;
+    box-sizing: border-box;
+    background-color: #232d3665;
+    border-radius: 15px;
 }

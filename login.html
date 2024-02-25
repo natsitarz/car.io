@@ -25,16 +25,24 @@
                 <img src="./img/new-logo.png" alt="car.io logo" class="cariologo">
                 <p id="title-sub-text">Your personal car's profile!</p>
             </div>
-            <div class="login">
+            <div id="login">
                 <div id="firebaseui-auth-container"></div>
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" id="user_email" placeholder="johndoe@example.com" required>
                 <label for="password">Password:</label>
                 <input type="password" name="password" id="user_password" placeholder="**********" required>
-                <button id="login-button">Login</button>
-                <button id="register-button">Register</button>
+                <div class="button-login">
+                    <button id="login-button">Login</button>
+                    <button id="register-button">Register</button>
+                </div>
                 <button id="google-button"><i class="fa-brands fa-google"></i> Sign In with Google</button>
                 <button id="facebook-button"><i class="fa-brands fa-facebook"></i> Sign In with Facebook</button>
+            </div>
+            <div id="logged">
+                <p id="sign-in-status">You are logged in!</p>
+                <p id="account-detail">
+                </p>
+                <button id="logout-button">Logout</button>
             </div>
         </div>
     </div>
