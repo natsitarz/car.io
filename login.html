@@ -35,14 +35,30 @@
                     <button id="login-button">Login</button>
                     <button id="register-button">Register</button>
                 </div>
+                <div style="display: none" id="error-login">
+                    <p style="margin: 0;">Check your email or password.</p>
+                </div>
                 <button id="google-button"><i class="fa-brands fa-google"></i> Sign In with Google</button>
                 <button id="facebook-button"><i class="fa-brands fa-facebook"></i> Sign In with Facebook</button>
             </div>
             <div id="logged">
                 <p id="sign-in-status"></p>
-                <p id="account-details">
-                </p>
+                <p id="username"></p>
+                <div id="username-update-div" style="display: none">
+                    <label for="updateUsername">Update your username:</label>
+                    <input type="text" id="username-input" name="updateUsername">
+                    <div style="display: none" id="error-username-update">
+                        <p>Username can't be empty and it must be at least 6 characters long!</p>
+                    </div>
+                </div>
+                <div id="account-details">
+                </div>
                 <button id="email-verify-button">Send email verification</button>
+                <button id="update-username-button">Update username</button>
+                <div style="display: none;" id="save-cancel-buttons">
+                    <button id="save-username-button">Save username</button>
+                    <button id="cancel-username-button">Cancel</button>
+                </div>
                 <button id="logout-button">Logout</button>
             </div>
         </div>
