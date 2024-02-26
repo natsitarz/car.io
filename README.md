@@ -12,7 +12,9 @@ You can share your profile using generated qr codes.
 Feel free to contribute to this project!
 
 ## TO-DO
-- Converting everything to React
+- Convert project to React
+- Sign up page
+- Better account page
 - Storing every information about user and their cars in database instead of localStorage
 - Adding more than one car
 - Gallery
