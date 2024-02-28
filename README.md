@@ -12,6 +12,10 @@ You can share your profile using generated qr codes.
 Feel free to contribute to this project!
 
 ## TO-DO
+- Convert project to React
+- Sign up page
+- Better account page
+- Storing every information about user and their cars in database instead of localStorage
 - Adding more than one car
 - Gallery
 - Sharing photos from gallery
@@ -19,6 +23,7 @@ Feel free to contribute to this project!
 - Responsive elements for mobile and other displays
 
 ## DONE
+- Sign in page and all of auth stuff [Need more work]
 - Maintenance log
 - Daily log
 - Refueling log with avg. fuel consumption
